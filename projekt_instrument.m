@@ -22,7 +22,7 @@ function varargout = projekt_instrument(varargin)
 
 % Edit the above text to modify the response to help projekt_instrument
 
-% Last Modified by GUIDE v2.5 08-Jan-2014 09:08:53
+% Last Modified by GUIDE v2.5 08-Jan-2014 09:25:29
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -299,7 +299,7 @@ function figure1_WindowKeyPressFcn(hObject, eventdata, handles)
 %	Modifier: name(s) of the modifier key(s) (i.e., control, shift) pressed
 % handles    structure with handles and user data (see GUIDATA)
 global scale;
-
+global a;
 switch eventdata.Key 
 case 'a' 
     playSound(scale(1));
@@ -327,6 +327,27 @@ case 'j'
     playSound(scale(12));
 case 'k'
     playSound(scale(13));
-
+case 'z'
+    a = a/2;
+case 'x'
+    a = a*2;
 
 end
+
+
+% --- Executes on button press in octaveDownButton.
+function octaveDownButton_Callback(hObject, eventdata, handles)
+% hObject    handle to octaveDownButton (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global a;
+a = a/2;
+
+
+% --- Executes on button press in octaveUpKey.
+function octaveUpKey_Callback(hObject, eventdata, handles)
+% hObject    handle to octaveUpKey (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+global a;
+a = a*2;
