@@ -306,27 +306,5 @@ case 'a'
 case 'w'
     playSound(scale(2));
 case 's'
-    playSound(scale(3));
-case 'e'
-    playSound(scale(4));
-case 'd'
-    playSound(scale(5));
-case 'f'
-    playSound(scale(6));
-case 't'
-    playSound(scale(7));
-case 'g'
-    playSound(scale(8));
-case 'y'
-    playSound(scale(9));
-case 'h'
-    playSound(scale(10));
-case 'u'
-    playSound(scale(11));
-case 'j'
-    playSound(scale(12));
-case 'k'
-    playSound(scale(13));
-
 
 end
